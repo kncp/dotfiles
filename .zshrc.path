@@ -1,0 +1,2 @@
+export PATH=$HOME/.nvim/bin:$PATH
+export PATH=/usr/local/opt/openssl/bin:$PATH
