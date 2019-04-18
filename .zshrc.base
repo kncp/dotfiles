@@ -1,3 +1,9 @@
+# username
+export PS1='%n$ '
+
+# load sshkey from KeyChain
+ssh-add -K
+
 # config home
 export XDG_CONFIG_HOME=$HOME/dotfiles
 
