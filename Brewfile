@@ -2,32 +2,59 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "weaveworks/tap"
-brew "aws-elasticbeanstalk"
-brew "awscli"
-brew "tfenv"
-brew "terraform_landscape"
-brew "kubernetes-helm"
-brew "kubectl"
-brew "weaveworks/tap/eksctl"
-brew "ccat"
-brew "colordiff"
-brew "exa"
-brew "git"
-brew "tig"
-brew "htop"
+
+# base
 brew "jq"
 brew "neovim"
-brew "peco"
-brew "tree"
 brew "wget"
+brew "tree"
 brew "zsh"
 brew "openssl"
 cask "alfred"
-cask "docker"
-cask "firefox"
 cask "iterm2"
-cask "slack"
-cask "atom"
+
+# aws
+brew "aws-elasticbeanstalk"
+brew "awscli"
+
+# terraform
+brew "tfenv"
+brew "terraform_landscape"
+
+# docker, k8s
+brew "kubernetes-helm"
+brew "kubectl"
+brew "weaveworks/tap/eksctl"
+cask "docker"
+
+# colorize
+brew "ccat"
+brew "colordiff"
+brew "exa"
+brew "htop"
+
+# git
+brew "git"
+brew "tig"
+
+# history
+brew "peco"
+
+# browser
 cask "google-chrome"
+cask "firefox"
+
+# chat
+cask "slack"
+
+# ime
 cask "google-japanese-ime"
-# cask "android-studio"
+
+# ide
+cask "android-studio"
+cask "atom"
+cask "intellij-idea"
+
+# xcode
+brew "carthage"
+
