@@ -2,7 +2,7 @@
 
 # initialize dotfiles
 
-DOT_FILES=( .zshrc .vimrc .gitconfig .gitignore_global )
+DOT_FILES=( .zshrc .gitconfig .gitignore_global )
 
 for file in ${DOT_FILES[@]}
 do
