@@ -17,8 +17,8 @@ set visualbell
 
 let mapleader = "\<Space>"
 nnoremap <silent><unique> <Leader>c :<C-u>setlocal cursorline! cursorcolumn!<CR>
-nnoremap <silent><unique> <Leader>h "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
-nnoremap <silent><unique> <Leader>n :noh<CR>
+nnoremap <silent><unique> <Leader>nh :noh<CR>
+nnoremap <silent><unique> <Leader>t :NERDTree<CR>
 
 inoremap <silent><unique> jj <ESC>
 

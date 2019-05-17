@@ -17,3 +17,5 @@ on_ft = ['js']
 repo = 'w0rp/ale'
 on_ft = ['js']
 
+[[plugins]]
+repo = 'scrooloose/nerdtree'
