@@ -1,0 +1,19 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+build = 'make'
+
+[[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = ['toml']
+
+[[plugins]]
+repo = 'posva/vim-vue'
+on_ft = ['js']
+
+[[plugins]]
+repo = 'w0rp/ale'
+on_ft = ['js']
+
