@@ -26,6 +26,7 @@ brew "kubernetes-helm"
 brew "kubectl"
 brew "weaveworks/tap/eksctl"
 cask "docker"
+cask "minikube"
 
 # colorize
 brew "ccat"
