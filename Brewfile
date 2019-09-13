@@ -14,12 +14,11 @@ cask "alfred"
 cask "iterm2"
 
 # aws
-brew "aws-elasticbeanstalk"
 brew "awscli"
+brew "remind101/formulae/assume-role"
 
 # terraform
 brew "tfenv"
-brew "terraform_landscape"
 
 # docker, k8s
 brew "kubernetes-helm"
@@ -43,7 +42,6 @@ brew "peco"
 
 # browser
 cask "google-chrome"
-cask "firefox"
 
 # chat
 cask "slack"
@@ -52,10 +50,5 @@ cask "slack"
 cask "google-japanese-ime"
 
 # ide
-cask "android-studio"
-cask "atom"
 cask "intellij-idea"
-
-# xcode
-brew "carthage"
 
