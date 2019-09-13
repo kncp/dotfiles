@@ -16,6 +16,7 @@ cask "iterm2"
 # aws
 brew "aws-elasticbeanstalk"
 brew "awscli"
+brew "remind101/formulae/assume-role"
 
 # terraform
 brew "tfenv"
