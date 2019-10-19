@@ -1,13 +1,15 @@
 [alias]
   st = status --short --branch
   co = checkout
-  cob = checkout -b
+  fe = fetch
   br = branch
   ci = commit
   cia = commit --amend
   ad = add
   rb = rebase
-  pl = pull --rebase
+  pl = pull
+  plr = pull --rebase
+  cp = cherry-pick
   lg   = log --graph --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   lga  = log --graph --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
   lgns = log --graph --color --decorate --oneline --name-status
