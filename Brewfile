@@ -22,7 +22,7 @@ brew "tfenv"
 
 # docker, k8s
 brew "kubernetes-helm"
-brew "kubectl"
+brew "kubernetes-cli"
 brew "weaveworks/tap/eksctl"
 cask "docker"
 cask "minikube"
@@ -48,6 +48,7 @@ cask "slack"
 
 # ime
 cask "google-japanese-ime"
+cask "visual-studio-code"
 
 # ide
 cask "intellij-idea"
