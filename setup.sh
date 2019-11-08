@@ -31,6 +31,10 @@ cat \<<EOF >> ~/.zshrc
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 EOF
 
+# override .zpreztorc
+
+mv ~/dotfiles/.zpreztorc ~/.zpreztorc
+
 # initialize dotfiles
 
 DOT_FILES=( .gitconfig .gitignore_global )
