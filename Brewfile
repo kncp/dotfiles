@@ -1,6 +1,7 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+tap "remind101/formulae"
 tap "weaveworks/tap"
 
 # base
@@ -12,6 +13,7 @@ brew "zsh"
 brew "openssl"
 cask "alfred"
 cask "iterm2"
+brew "fzf"
 
 # aws
 brew "awscli"
@@ -21,6 +23,8 @@ brew "remind101/formulae/assume-role"
 brew "tfenv"
 
 # docker, k8s
+brew "dockerize"
+brew "kubectx"
 brew "kubernetes-helm"
 brew "kubernetes-cli"
 brew "weaveworks/tap/eksctl"
@@ -36,9 +40,6 @@ brew "htop"
 # git
 brew "git"
 brew "tig"
-
-# history
-brew "peco"
 
 # browser
 cask "google-chrome"
