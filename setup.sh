@@ -37,7 +37,7 @@ mv ~/dotfiles/.zpreztorc ~/.zpreztorc
 
 # initialize dotfiles
 
-DOT_FILES=( .gitconfig .gitignore_global )
+DOT_FILES=( .gitconfig .gitconfig.github .gitignore_global )
 
 for file in ${DOT_FILES[@]}
 do

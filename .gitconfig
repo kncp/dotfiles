@@ -31,3 +31,7 @@
   prompt = false
 [fetch]
   prune = true
+[includeIf "gitdir:~/github.com/"]
+  path = ~/.gitconfig.github
+[includeIf "gitdir:~/dotfiles/"]
+  path = ~/.gitconfig.github
