@@ -30,7 +30,7 @@ brew "kubernetes-cli"
 brew "weaveworks/tap/eksctl"
 cask "docker"
 cask "minikube"
-derailed/k9s/k9s
+brew "derailed/k9s/k9s"
 
 # colorize
 brew "ccat"
