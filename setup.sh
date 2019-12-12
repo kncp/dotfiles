@@ -2,6 +2,7 @@
 
 # setup prezto
 
+unlink ~/.zshrc
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 
 setopt EXTENDED_GLOB
@@ -11,7 +12,7 @@ done
 
 # update rc
 
-cat \<<EOF >> ~/.zshrc
+cat <<EOF >> ~/.zshrc
 # path
 [ -f ~/dotfiles/.zshrc.path ] && source ~/dotfiles/.zshrc.path
 
