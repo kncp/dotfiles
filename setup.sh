@@ -1,9 +1,12 @@
-#!/bin/bash
+#!/bin/zsh
 
 # setup prezto
-
+echo "setup prezto ..."
 unlink ~/.zshrc
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+
+if [ ! -d ${ZDOTDIR:-$HOME}/.zprezto ]; then
+  git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+fi
 
 setopt EXTENDED_GLOB
 for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
@@ -32,11 +35,15 @@ cat <<EOF >> ~/.zshrc
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 EOF
 
-# override .zpreztorc
+# copy .zpreztorc
 
-mv ~/dotfiles/.zpreztorc ~/.zpreztorc
+\cp -f $HOME/dotfiles/.zpreztorc $HOME/.zpreztorc
+
+echo "ok"
 
 # initialize dotfiles
+
+echo "setup dot files"
 
 DOT_FILES=( .gitconfig .gitconfig.github .gitignore_global )
 
@@ -45,9 +52,17 @@ do
     ln -s $HOME/dotfiles/$file $HOME/$file
 done
 
-# use zsh
+echo "ok"
 
-SHELLS=`cat /etc/shells`
-if [[ ! $SHELLS =~ \/usr\/local\/bin\/zsh ]]; then
-    sudo echo '/usr/local/bin/zsh' >> /etc/shells
-fi
+# ready to use nvim
+
+echo "ready to use nvim"
+
+pyenv install 3.7.3 -s
+pyenv local 3.7.3
+eval "$(pyenv init -)"
+pip3 install --upgrade pip
+pip3 install --user pynvim
+
+echo "ok"
+

@@ -13,18 +13,12 @@
 
 - `git clone https://github.com/kncp/dotfiles.git`
 - `cd ~/dotfiles`
-- `sudo ./setup.sh`
-  - `/etc/shells` を更新するためsudoが必要
-
-## zshを使う
-
-`chsh -s /usr/local/bin/zsh`
+- `./setup.sh`
 
 ## Homebrewでアプリをインストール
 
 - `cd ~/dotfiles`
 - `brew bundle`
-
 
 ## zshのローカル設定を追加する
 
