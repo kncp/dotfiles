@@ -77,3 +77,9 @@ Identity added: /Users/hogehoge/.ssh/id_ed25519 (your@email.address)
 - 日本語の `ひらがな` を追加
 - 英語の `英数` を追加
 - 元の日本語入力を削除（ `ことえり` など）
+
+## Shellの変更 (Catalina 以降は不要)
+
+```
+$ chsh -s /bin/zsh
+```

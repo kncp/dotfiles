@@ -22,3 +22,6 @@ eval "$(direnv hook zsh)"
 export KUBECTX_CURRENT_FGCOLOR=$(tput setaf 4)
 export KUBECTX_CURRENT_BGCOLOR=$(tput setab 0)
 
+# python
+
+eval "$(pyenv init -)"

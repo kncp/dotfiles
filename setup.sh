@@ -59,7 +59,7 @@ echo "ok"
 echo "ready to use nvim"
 
 pyenv install 3.7.3 -s
-pyenv local 3.7.3
+pyenv global 3.7.3
 eval "$(pyenv init -)"
 pip3 install --upgrade pip
 pip3 install --user pynvim
